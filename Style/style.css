@@ -1,0 +1,97 @@
+.absolute {
+    position: absolute;
+}
+.relative {
+    position: relative;
+}
+.my-column {
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -ms-align-content: center;
+    -webkit-align-content: center;
+    align-content: center;
+}
+.my-row {
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -ms-align-content: center;
+    -webkit-align-content: center;
+    align-content: center;
+}
+
+.my-center{
+    text-align: center;
+    align-content: center;
+    align-self: center;
+    margin: 0 auto;
+}
+.fillwidth {
+    min-width: 100%;
+    height: auto;
+}
+.fillheight {
+    min-height: 100%;
+    width: auto;
+}
+.header-page{
+    background:#FF895B ;
+}
+.header-content{
+    padding-top: 150px;
+}
+.left-airplane{
+left:0;
+top:140;
+}
+.right-airplane{
+    right:0;
+    top:140;
+}
+.header-page h1{
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 81px;
+    color: #FFFFFF;
+    filter: drop-shadow(-3px 3px 0px rgba(0, 0, 0, 1));
+    -webkit-text-stroke: 2px black;
+    /* margin: auto !important; */
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+.timeline{
+    width: 50vw;
+    margin-top:60px ;
+}
+
+.header-button{
+    width: 70%;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top:65px;
+    margin-bottom: 60px;
+}
+.header-button button , .nav-button{
+    left:74;
+    margin-top:-5px;
+    width:180px;
+    border:2px solid black;
+    border-radius: 50px;
+    background: white;
+    padding:3px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header-button button:focus , .nav-button:focus {
+outline: none;
+text-decoration: none !important;
+
+}
+.nav-button{
+    background: transparent !important;
+}
