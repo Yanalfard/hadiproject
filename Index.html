@@ -1,63 +1,222 @@
 <html>
-    <head>
-        <title>STW</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="Style/bootstrap.min.css" rel="stylesheet" />
-        <link href="Style/bootstrap.css" rel="stylesheet" />
-        <link href="Style/style.css" rel="stylesheet" />
-     
-       
-        <script src="Scripts/jquery-3.6.0.js"></script>   
-        <script src="Scripts/bootstrap.min.js"></script>  
-        <script src="Scripts/bootstrap.js"></script>
-    </head>
-    <body>
-        <section class="header-page">
-            <nav class="navbar navbar-inverse">
-                <div class="container-fluid">
-                  <div class="navbar-header">
-                    <a class="navbar-brand" href="#">
-                        <img src="img/logo.png" >
-                    </a>
-                  </div>
-                  <ul class="nav my-row navbar-nav">
-                      
-                    <li class="active mx-5"><a href="#">Home</a></li>
-                    <li class="mx-5"><a href="#">Page 1</a></li>
-                    <li class="mx-5"><a href="#">Page 2</a></li>
-                    <li class="mx-5"><a href="#">Page 2</a></li>
-                    <li class="mx-5"><a href="#">Page 2</a></li>
-                    <li class="mx-5"><a href="#">Page 2</a></li>
-                  </ul>
-                  <ul class="nav navbar-nav navbar-right">
-                    <li><button class="nav-button" >Submit Your Game</button></li>
-                  </ul>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STW</title>
+    <link href="Style/bootstrap.min.css" rel="stylesheet" />
+    <link href="Style/bootstrap.css" rel="stylesheet" />
+    <link href="Style/style.css" rel="stylesheet" />
+
+
+    <script src="Scripts/jquery-3.6.0.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+</head>
+
+<body>
+    <!--header section-->
+    <section class="header-page">
+        <nav class="navbar navbar-expand-md navbar-light fixed-top">
+            <a href="#" class="navbar-brand ml-md-4">
+                <img src="img/logo.png">
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse justify-content-benetwe" id="navbarCollapse">
+                <ul class="nav navbar-nav my-center">
+                    <li class="active mx-md-4"><a href="#">Home</a></li>
+                    <li class="mx-md-4"><a href="#">Competition Journey</a></li>
+                    <li class="mx-md-4"><a href="#">The Judges</a></li>
+                    <li class="mx-md-4"><a href="#">FAQ</a></li>
+                    <li class="mx-md-4"><a href="#">Storm Publishings</a></li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right mr-md-4">
+                    <li><button class="nav-button" data-toggle="modal" data-target="#myModal">Submit Your Game</button></li>
+                </ul>
+            </div>
+        </nav>
+        <img class="ml-3 absolute left-airplane" src="Img/left-airplane.svg">
+        <div class="my-column my-center uk-align-center header-content">
+            <h1 class="my-center"> Storm The World (STW):</h1>
+            <img class="my-center timeline" src="img/timeline.svg">
+            <div class="row header-button">
+                <div class="col-12 col-md-4 mt-2 mb-3 mt-md-0 mb-md-0">
+                    <img src="Img/btn-bg.svg">
+                    <button class="absolute" data-toggle="modal" data-target="#myModal">Submit Your Game</button>
                 </div>
-              </nav>
-            <img class="ml-2 absolute left-airplane" src="Img/left-airplane.svg">
-            <div class="my-column my-center uk-align-center header-content">
-             <h1 class="my-center"> Storm The World (STW):</h1>
-             <img class="my-center timeline" src="img/timeline.svg" >
-             <div class="row header-button">
-                <div class="col-12 col-md-4">
-                       <img src="Img/btn-bg.svg">
-                       <button class="absolute" >Submit Your Game</button>
-                </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 mt-2 mb-3 mt-md-0 mb-md-0">
                     <img src="Img/btn-bg.svg">
                     <button class="absolute">Join Discord Channel</button>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 mt-2 mb-3 mt-md-0 mb-md-0">
                     <img src="Img/btn-bg.svg">
                     <button class="absolute">Facebook Event Page</button>
                 </div>
-              </div>
             </div>
-             <img class="mr-2 absolute right-airplane" src="Img/right-airplane.svg">
-        </section>
+            <a class="chevron" href="#"><img class="my-center" src="Img/chevron-down.svg"></a>
+        </div>
+        <img class="mr-3 absolute right-airplane" src="Img/right-airplane.svg">
 
- 
-       
-    </body>
+    </section>
+    <!--end header section-->
+    <!--what is STW section-->
+    <section class="whatSTW my-center">
+        <h1 class="text-left pb-2 d-none mobile-header">
+            What is <br> Storm The World?
+        </h1>
+        <div class="whatSTW-container my-center pt-2" dir="rtl">
+            <div class="img-container pt-md-4">
+                <img class="pt-md-3" src="img/What is Storm the World.svg" width="250">
+            </div>
+            <div class="content-container pt-5 pt-md-0">
+                <h1 class="text-left pb-3 desktop-header">
+                    What is <br> ?Storm The World
+                </h1>
+                <p class="text-left">Storm The World is a hyper-casual game competition that was first launched by Storms Publishing in January 2021.<br><br>Its aim is to supercharge the growth of high-potential indie mobile game developers yet to be discovered by offering
+                    them the chance to win cash prizes and attractive publishing contracts.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--end what is STW section-->
+    <!--Why Should You Participate? section-->
+    <section class="why-participate">
+        <div class="why-participate-container my-center">
+            <h1 class="text-white text-left">
+                Why Should You Participate?
+            </h1>
+            <div class="row mt-5">
+
+                <div class="col-sm-4 why-element">
+                    <img class="" src="img/Trophy.svg">
+                    <h4 class="mt-4 text-white">Attractive Cash Prizes</h4>
+                </div>
+                <div class="col-sm-4 why-element">
+                    <img class="pl-3" src="img/Contract.svg">
+                    <h4 class="mt-4 pt-2 text-white">Exclusive Publishing Contracts</h4>
+                </div>
+                <div class="col-sm-4 why-element">
+                    <img class="gly-rotate-25" src="img/Megaphone.svg">
+                    <h4 class="mt-4 text-white pt-1">Brand Exposure</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end Why Should You Participate section-->
+    <!--Competition Journey section-->
+    <section class="competition-journey my-center">
+        <div class="my-center">
+            <h1 class="text-left text-md-center">
+                How Your Competition Journey Looks Like
+            </h1>
+            <div class="container">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#Game-Submission">Game Submission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#Shortlisting">Shortlisting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#Final-Round">Final Round</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div id="Game-Submission" class="container tab-pane active text-left"><br>
+                        <h3>Step 1:</h3>
+                        <p>During this period, you’ll be able to submit your hyper-casual mobile game by clicking the “Submit your game” button and filling in the form. More details about the submission criteria can be foun<a>here</a>.</p>
+                    </div>
+                    <div id="Shortlisting" class="container tab-pane fade text-left"><br>
+                        <h3>Step 2:</h3>
+                        <p>In this round, the competition jury that comprises experts across areas such as game design, monetisation and user acquisition (UA) will select the Top 10 games based on the game’s originality, production quality as well as market
+                            fit. We will announce the Top 10 winners on the <a> STW Discord Channel </a> and <a>Facebook Event Page</a> on Tuesday, 31 August.</p>
+                    </div>
+                    <div id="Final-Round" class="container tab-pane fade text-left"><br>
+                        <h3>Step 3:</h3>
+                        <p>The Top 10 games that progress to the semifinal round will be awarded cash prizes. In the final round, the Top 10 will be working hand-in-hand with Storms’ UA experts to run UA testing. Depending on the test results, they will
+                            have the opportunity to unlock the first/runner-up’s prizes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end of Competition Journey section-->
+    <!-- The Modal (game submition form)-->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div>
+                    <button type="button" class="close float-right pt-3 pr-3" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body pl-5">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-5">
+                                <label for="fullName">Full Name*</label>
+                                <br>
+                                <input type="text" class="" id="fullName" placeholder="">
+                            </div>
+                            <div class="form-group col-md-5">
+                                <label for="Email">Email*</label>
+                                <br>
+                                <input type="email" class="" id="Email" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-5">
+                                <label for="discordID">Discord ID*</label>
+                                <br>
+                                <input type="text" class="" id="discordID" placeholder="">
+                            </div>
+                            <div class="form-group col-md-5">
+                                <label for="country">Country*</label>
+                                <br>
+                                <select id="Country" class="">
+                  <option selected></option>
+                  <option>...</option>
+                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-5">
+                                <label for="mobile">Mobile*</label>
+                                <br>
+                                <input type="tel" class="" id="mobile" placeholder="">
+                            </div>
+                            <div class="form-group col-md-5">
+                                <label for="gameLink">Your Game Link*</label>
+                                <br>
+                                <input type="url" class="" id="gameLink" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-5">
+                                <label for="retentionResults">Retention Results*</label>
+                                <br>
+                                <input type="text" class="" id="retentionResults" placeholder="">
+                            </div>
+                            <div class="form-group col-md-5">
+                                <label for="cpi">CPI</label>
+                                <br>
+                                <input type="text" class="" id="cpi" placeholder="">
+                            </div>
+                        </div>
+                        <p class="text-small">By submitting you acknowledge that the information you submit will be used according to Storms Privacy Policy and Terms & Conditions.</p>
+                        <button type="submit" class="btn float-right" data-dismiss="modal">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end The Modal (game submition form)-->
+</body>
 
 </html>
