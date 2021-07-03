@@ -505,29 +505,3 @@
     }
     
     @media screen and (min-width: 780px) and (max-width: 780px) {}
-    
-    .animation {
-        animation: mymove 3s infinite;
-    }
-    
-    @keyframes mymove {
-        from {
-            top: 140px;
-        }
-        to {
-            top: -550px;
-        }
-    }
-    
-    .animation1 {
-        animation: mymove 3s infinite;
-    }
-    
-    @keyframes mymove {
-        from {
-            top: 110px;
-        }
-        to {
-            top: -550px;
-        }
-    }

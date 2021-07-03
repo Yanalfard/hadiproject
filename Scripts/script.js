@@ -81,14 +81,3 @@ function step3() {
 
 
 // document.getElementById("header-page").addEventListener("scroll", animation());
-var flag = false
-if (flag == false) {
-    window.onscroll = function() { animation() };
-    flag = true
-}
-
-function animation() {
-    document.getElementById("left-airplane").classList.add("animation");
-    document.getElementById("right-airplane").classList.add("animation1");
-
-}
