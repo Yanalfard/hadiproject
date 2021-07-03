@@ -13,6 +13,7 @@
     <script src="Scripts/jquery-3.6.0.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/script.js"></script>
 </head>
 
 <body>
@@ -39,10 +40,10 @@
                 </ul>
             </div>
         </nav>
-        <img class="ml-3 absolute left-airplane" src="Img/left-airplane.svg">
+        <img id="left-airplane" class="ml-3 absolute left-airplane" src="Img/left-airplane.svg">
         <div class="my-column my-center uk-align-center header-content">
             <h1 class="my-center"> Storm The World (STW):</h1>
-            <img class="my-center timeline" src="img/timeline.svg">
+            <img class="my-center header-timeline" src="img/timeline.svg">
             <div class="row header-button">
                 <div class="col-12 col-md-4 mt-2 mb-3 mt-md-0 mb-md-0">
                     <img src="Img/btn-bg.svg">
@@ -59,7 +60,7 @@
             </div>
             <a class="chevron" href="#"><img class="my-center" src="Img/chevron-down.svg"></a>
         </div>
-        <img class="mr-3 absolute right-airplane" src="Img/right-airplane.svg">
+        <img id="right-airplane" class="mr-3 absolute right-airplane" src="Img/right-airplane.svg">
 
     </section>
     <!--end header section-->
@@ -113,32 +114,64 @@
             <h1 class="text-left text-md-center">
                 How Your Competition Journey Looks Like
             </h1>
-            <div class="container">
+            <section class="timeline-section my-center mt-5 mb-3">
+                <div class="my-row">
+                    <div id="step1Dot" class="step-dot">
+                        <div id="step1InnerDot" class="step-innerdot my-center mt-1"></div>
+                    </div>
+                    <div class="my-column">
+                        <span id="step1Date" class="mb-2">15 July - 15 Aug</span>
+                        <div id="step1Line" class="step-line"></div>
+                        <img id="step1Chev" class="my-center mt-3" src="Img/chevron-down.svg" width="20px">
+                    </div>
+                    <div id="step2Dot" class="step-dot">
+                        <div id="step2InnerDot" class="my-center mt-1 step-innerdot"></div>
+                    </div>
+                    <div class="my-column">
+                        <span id="step2Date" class="mb-2 step-date">16 – 31 Aug</span>
+                        <div id="step2Line" class="step-line"></div>
+                        <img id="step2Chev" class="my-center mt-3 d-none" src="Img/chevron-down.svg" width="20px">
+                    </div>
+                    <div id="step3Dot" class="step-dot">
+                        <div id="step3InnerDot" class="my-center mt-1 step-innerdot"></div>
+                    </div>
+                    <div class="my-column">
+                        <span id="step3Date" class="mb-2 step-date">1 – 30 Sept</span>
+                        <div id="step3Line" class="step-line"></div>
+                        <img id="step3Chev" class="my-center mt-3 d-none" src="Img/chevron-down.svg" width="20px">
+                    </div>
+                    <div id="step4Dot" class="step-dot">
+                        <div id="step4InnerDot" class="my-center mt-1 step-innerdot"></div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="steps-container my-center pb-2">
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
-                    <li class="nav-item">
+                    <li class="nav-item" onclick="step1()">
                         <a class="nav-link active" data-toggle="tab" href="#Game-Submission">Game Submission</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" onclick="step2()">
                         <a class="nav-link" data-toggle="tab" href="#Shortlisting">Shortlisting</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" onclick="step3()">
                         <a class="nav-link" data-toggle="tab" href="#Final-Round">Final Round</a>
                     </li>
                 </ul>
 
                 <!-- Tab panes -->
                 <div class="tab-content">
-                    <div id="Game-Submission" class="container tab-pane active text-left"><br>
+                    <div id="Game-Submission" class="container tab-pane active text-left pb-5"><br>
                         <h3>Step 1:</h3>
                         <p>During this period, you’ll be able to submit your hyper-casual mobile game by clicking the “Submit your game” button and filling in the form. More details about the submission criteria can be foun<a>here</a>.</p>
                     </div>
-                    <div id="Shortlisting" class="container tab-pane fade text-left"><br>
+                    <div id="Shortlisting" class="container tab-pane fade text-left pb-5"><br>
                         <h3>Step 2:</h3>
                         <p>In this round, the competition jury that comprises experts across areas such as game design, monetisation and user acquisition (UA) will select the Top 10 games based on the game’s originality, production quality as well as market
                             fit. We will announce the Top 10 winners on the <a> STW Discord Channel </a> and <a>Facebook Event Page</a> on Tuesday, 31 August.</p>
                     </div>
-                    <div id="Final-Round" class="container tab-pane fade text-left"><br>
+                    <div id="Final-Round" class="container tab-pane fade text-left pb-5"><br>
                         <h3>Step 3:</h3>
                         <p>The Top 10 games that progress to the semifinal round will be awarded cash prizes. In the final round, the Top 10 will be working hand-in-hand with Storms’ UA experts to run UA testing. Depending on the test results, they will
                             have the opportunity to unlock the first/runner-up’s prizes.</p>
@@ -146,77 +179,127 @@
                 </div>
             </div>
         </div>
+        <div class="row mt-5 my-center col-md-9">
+            <div class="col-md-4 my-center">
+                <img class="" src="img/Trophy Bubble.svg">
+                <h4 class="mt-4">First prize</h4>
+                <p class="mt-4">for the first game submission that gets published by Storms as part of the contest </p>
+            </div>
+            <div class="col-md-4 my-center">
+                <img class="mt-4" src="img/Heart Bubble.svg">
+                <h4 class="mt-4">Runners-Up<br>US$50K Cash Prize</h4>
+                <p>for all other game submissions that get published by Storms as part of the contest</p>
+            </div>
+
+        </div>
+        <div class="my-center col-md-5">
+            <p class="mt-5">We will announce the winners in mid-October. More details about the Terms and Conditions can be found here.</p>
+        </div>
     </section>
     <!--end of Competition Journey section-->
+    <!--The Judges section-->
+    <section class="judges-section">
+        <div class="my-center">
+            <h1 class="text-md-center">
+                The Judges
+            </h1>
+            <div class="row mt-5 my-center col-md-9">
+                <div class="col my-center">
+                    <img class="" src="img/pic1.png">
+                    <h4 class="mt-4">Benjamin Pommeraud</h4>
+                    <p class="mt-4">Chief Growth Officer Storms</p>
+                </div>
+                <div class="col my-center">
+                    <img class="" src="img/pic2.png">
+                    <h4 class="mt-4">Shn Juay</h4>
+                    <p class="mt-4">VP, Product & Marketing Storms</p>
+                </div>
+                <div class="col my-center">
+                    <img class="" src="img/pic3.png">
+                    <h4 class="mt-4">Andrew Mo</h4>
+                    <p class="mt-4">Product Manager Facebook Gaming</p>
+                </div>
+                <div class="col my-center">
+                    <img class="" src="img/pic3.png">
+                    <h4 class="mt-4">TBC</h4>
+                    <p class="mt-4 pb-4">Designation (VP) Adjust</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end The Judges section-->
+
     <!-- The Modal (game submition form)-->
-    <div class="modal fade" id="myModal">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
+    <div class="modal fade " id="myModal ">
+        <div class="modal-dialog modal-dialog-centered modal-lg ">
+            <div class="modal-content ">
                 <div>
-                    <button type="button" class="close float-right pt-3 pr-3" data-dismiss="modal">&times;</button>
+                    <button type="button " class="close float-right pt-3 pr-3 " data-dismiss="modal ">&times;</button>
                 </div>
                 <!-- Modal body -->
-                <div class="modal-body pl-5">
+                <div class="modal-body pl-5 ">
                     <form>
-                        <div class="form-row">
-                            <div class="form-group col-md-5">
-                                <label for="fullName">Full Name*</label>
+                        <div class="form-row ">
+                            <div class="form-group col-md-5 ">
+                                <label for="fullName ">Full Name*</label>
                                 <br>
-                                <input type="text" class="" id="fullName" placeholder="">
+                                <input type="text " class=" " id="fullName " placeholder=" ">
                             </div>
-                            <div class="form-group col-md-5">
-                                <label for="Email">Email*</label>
+                            <div class="form-group col-md-5 ">
+                                <label for="Email ">Email*</label>
                                 <br>
-                                <input type="email" class="" id="Email" placeholder="">
+                                <input type="email " class=" " id="Email " placeholder=" ">
                             </div>
                         </div>
-                        <div class="form-row">
-                            <div class="form-group col-md-5">
-                                <label for="discordID">Discord ID*</label>
+                        <div class="form-row ">
+                            <div class="form-group col-md-5 ">
+                                <label for="discordID ">Discord ID*</label>
                                 <br>
-                                <input type="text" class="" id="discordID" placeholder="">
+                                <input type="text " class=" " id="discordID " placeholder=" ">
                             </div>
-                            <div class="form-group col-md-5">
-                                <label for="country">Country*</label>
+                            <div class="form-group col-md-5 ">
+                                <label for="country ">Country*</label>
                                 <br>
-                                <select id="Country" class="">
+                                <select id="Country " class=" ">
                   <option selected></option>
                   <option>...</option>
                 </select>
                             </div>
                         </div>
-                        <div class="form-row">
-                            <div class="form-group col-md-5">
-                                <label for="mobile">Mobile*</label>
+                        <div class="form-row ">
+                            <div class="form-group col-md-5 ">
+                                <label for="mobile ">Mobile*</label>
                                 <br>
-                                <input type="tel" class="" id="mobile" placeholder="">
+                                <input type="tel " class=" " id="mobile " placeholder=" ">
                             </div>
-                            <div class="form-group col-md-5">
-                                <label for="gameLink">Your Game Link*</label>
+                            <div class="form-group col-md-5 ">
+                                <label for="gameLink ">Your Game Link*</label>
                                 <br>
-                                <input type="url" class="" id="gameLink" placeholder="">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group col-md-5">
-                                <label for="retentionResults">Retention Results*</label>
-                                <br>
-                                <input type="text" class="" id="retentionResults" placeholder="">
-                            </div>
-                            <div class="form-group col-md-5">
-                                <label for="cpi">CPI</label>
-                                <br>
-                                <input type="text" class="" id="cpi" placeholder="">
+                                <input type="url " class=" " id="gameLink " placeholder=" ">
                             </div>
                         </div>
-                        <p class="text-small">By submitting you acknowledge that the information you submit will be used according to Storms Privacy Policy and Terms & Conditions.</p>
-                        <button type="submit" class="btn float-right" data-dismiss="modal">submit</button>
+                        <div class="form-row ">
+                            <div class="form-group col-md-5 ">
+                                <label for="retentionResults ">Retention Results*</label>
+                                <br>
+                                <input type="text " class=" " id="retentionResults " placeholder=" ">
+                            </div>
+                            <div class="form-group col-md-5 ">
+                                <label for="cpi ">CPI</label>
+                                <br>
+                                <input type="text " class=" " id="cpi " placeholder=" ">
+                            </div>
+                        </div>
+                        <p class="text-small ">By submitting you acknowledge that the information you submit will be used according to Storms Privacy Policy and Terms & Conditions.</p>
+                        <button type="submit " class="btn float-right " data-dismiss="modal ">submit</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
     <!-- end The Modal (game submition form)-->
+    <script>
+    </script>
 </body>
 
 </html>
