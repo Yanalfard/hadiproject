@@ -63,32 +63,6 @@
         transform: rotate(180deg);
     }
     
-    .animation {
-        animation: mymove 3s infinite;
-    }
-    
-    @keyframes mymove {
-        from {
-            top: 140px;
-        }
-        to {
-            top: -550px;
-        }
-    }
-    
-    .animation1 {
-        animation: mymove 3s infinite;
-    }
-    
-    @keyframes mymove {
-        from {
-            top: 110px;
-        }
-        to {
-            top: -550px;
-        }
-    }
-    
     .bold-link {
         font-weight: 700;
         cursor: pointer;
