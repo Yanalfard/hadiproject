@@ -635,6 +635,71 @@
     </div>
     <!-- end The Modal (game submition form)-->
     <script>
+        var scrollPos = 0;
+window.addEventListener('scroll', function () {
+    if ((document.body.getBoundingClientRect()).top > scrollPos) {
+        console.log('up')
+        goOne(true)
+    }
+    else if ((document.body.getBoundingClientRect()).top < scrollPos) {
+        goOne(false)
+        console.log('down')
+    }
+    scrollPos = (document.body.getBoundingClientRect()).top;
+});
+
+
+var elem = document.getElementById('left-airplane'),
+    top = parseInt(elem.style.marginTop, 10) || 0,
+    step = 1;
+
+function animate() {
+    if (top < 100) {
+        requestAnimationFrame(animate);
+        elem.style.marginTop = top + 'px';
+        top += step;
+    }
+}
+
+var elem2 = document.getElementById('right-airplane'),
+    top = parseInt(elem2.style.marginTop, 10) || 0,
+    step = 1;
+
+function animate2() {
+    if (top < 100) {
+        requestAnimationFrame(animate2);
+        elem2.style.marginTop = top + 'px';
+        top += step;
+    }
+}
+var countUp = 1
+var countDown = 1
+function goOne(up) {
+    var frag = document.getElementById('left-airplane')
+    var frag2 = document.getElementById('right-airplane')
+    if (up == true) {
+        if (countUp % 1 == 0) {
+            for (var i = 0; i != 5; i++) {
+                currentTop = parseInt(frag.style.marginTop) || 0;
+                newTop = parseInt(currentTop + 1);
+                frag.style.marginTop = newTop + "px";
+                frag2.style.marginTop = newTop + "px";
+            }
+        }
+        countUp = countUp + 1;
+    }
+    else {
+        if (countDown % 1 == 0) {
+            for (var i = 0; i != 5; i++) {
+                currentTop = parseInt(frag.style.marginTop) || 0;
+                newTop = parseInt(currentTop - 1);
+                frag.style.marginTop = newTop + "px";
+                frag2.style.marginTop = newTop + "px";
+            }
+        }
+        countDown = countDown + 1;
+    }
+}
     </script>
 </body>
 
