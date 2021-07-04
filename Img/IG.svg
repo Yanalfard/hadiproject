@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="53.12" height="53.12" viewBox="0 0 53.12 53.12">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        stroke: #000;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="IG" transform="translate(1 1)">
+    <g id="noun_instagram_3350460" transform="translate(11.562 11.562)">
+      <path id="Path_3812" data-name="Path 3812" class="cls-1" d="M24.342,0H4.868A4.868,4.868,0,0,0,0,4.868V24.342A4.868,4.868,0,0,0,4.868,29.21H24.342a4.868,4.868,0,0,0,4.868-4.868V4.868A4.868,4.868,0,0,0,24.342,0Zm2.434,24.342a2.434,2.434,0,0,1-2.434,2.434H4.868a2.434,2.434,0,0,1-2.434-2.434V4.868A2.434,2.434,0,0,1,4.868,2.434H24.342a2.434,2.434,0,0,1,2.434,2.434Z"/>
+      <path id="Path_3813" data-name="Path 3813" class="cls-1" d="M13.3,6a7.3,7.3,0,1,0,7.3,7.3A7.3,7.3,0,0,0,13.3,6Zm0,12.171A4.868,4.868,0,1,1,18.171,13.3,4.868,4.868,0,0,1,13.3,18.171Z" transform="translate(1.302 1.302)"/>
+      <circle id="Ellipse_216" data-name="Ellipse 216" cx="1.826" cy="1.826" r="1.826" transform="translate(20.69 4.868)"/>
+    </g>
+    <rect id="Rectangle_2659" data-name="Rectangle 2659" class="cls-2" width="51.12" height="51.12" rx="25.56" transform="translate(0 0)"/>
+  </g>
+</svg>

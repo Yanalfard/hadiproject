@@ -92,3 +92,11 @@ function animation() {
     document.getElementById("right-airplane").classList.add("animation1");
 
 }
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
