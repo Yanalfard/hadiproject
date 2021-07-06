@@ -88,3 +88,21 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
+
+function fadeIn(first, second) {
+    var one = document.getElementById(first)
+    one.classList.remove('fade-in')
+    one.classList.add('fade-out')
+    var two = document.getElementById(second)
+    two.classList.remove('fade-out')
+    two.classList.add('fade-in')
+}
+
+function fadeOut(first, second) {
+    var one = document.getElementById(first)
+    one.classList.remove('fade-out')
+    one.classList.add('fade-in')
+    var two = document.getElementById(second)
+    two.classList.remove('fade-in')
+    two.classList.add('fade-out')
+}
