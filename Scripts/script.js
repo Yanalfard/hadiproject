@@ -79,6 +79,14 @@ function step3() {
 
 }
 
+$(window).on("scroll", function() {
+    if ($(window).scrollTop() > 50) {
+        $("#menu").addClass("active-header");
+    } else {
+        //remove the background property so it comes transparent again (defined in your css)
+        $("#menu").removeClass("active-header");
+    }
+});
 
 // document.getElementById("header-page").addEventListener("scroll", animation());
 function openNav() {

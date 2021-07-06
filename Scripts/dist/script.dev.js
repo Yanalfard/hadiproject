@@ -65,8 +65,16 @@ function step3() {
   document.getElementById("step2Dot").style.borderColor = "#B2B2B2";
   document.getElementById("step2InnerDot").style.background = "#B2B2B2";
   document.getElementById("Final-Round").style.borderColor = "black";
-} // document.getElementById("header-page").addEventListener("scroll", animation());
+}
 
+$(window).on("scroll", function () {
+  if ($(window).scrollTop() > 50) {
+    $("#menu").addClass("active-header");
+  } else {
+    //remove the background property so it comes transparent again (defined in your css)
+    $("#menu").removeClass("active-header");
+  }
+}); // document.getElementById("header-page").addEventListener("scroll", animation());
 
 function openNav() {
   document.getElementById("mySidenav").style.width = "100%";
