@@ -3,6 +3,11 @@
         src: url(/Fonts/Montserrat-Light.ttf);
     }
 
+    @font-face {
+        font-family: MontBold;
+        src: url(/Fonts/Montserrat-Medium.ttf);
+    }
+
     body {
         overflow-x: hidden;
         font-family:Mont;
