@@ -251,7 +251,7 @@
             <h1 class="text-md-center">
                 The Judges
             </h1>
-            <div class="row mt-5 my-center col-md-9">
+            <div class="row mt-5 my-center judges-section-container">
                 <div class="col my-center">
                     <img class="" src="img/pic1.png">
                     <h4 class="mt-4 font-weight-bold"><u>Benjamin Pommeraud</u></h4>
@@ -278,12 +278,13 @@
     <!--end The Judges section-->
     <!--Slider section-->
     <section class="slider-section">
+        <!-- <div class="my-center" style="width: 70%;"> -->
         <div class="slider-section-container my-center">
             <h1 class="text-left slider-header">
                 Storm The World: <br>Inaugural Edition
             </h1>
             <img class="absolute left-wave" src="img/left-wave.svg">
-            <div class="col-md-9  my-center">
+            <div class="my-center">
                 <div id="demo" class="carousel slide mt-5" data-ride="carousel">
                     <ul class="carousel-indicators">
                         <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -361,8 +362,8 @@
                 </div>
             </div>
 
-            <img class="right-wave float-right " src="img/right-wave.svg">
-        </div>
+
+        </div> <img class="right-wave float-right " src="img/right-wave.svg">
 
         <div class="row my-center col-md-9 numbers">
             <div class="col-md-4 my-center">
@@ -378,6 +379,7 @@
                 <label class="font-weight-bold">Winner</label>
             </div>
 
+            <!-- </div> -->
         </div>
     </section>
     <!--end Slider section-->
@@ -636,70 +638,69 @@
     <!-- end The Modal (game submition form)-->
     <script>
         var scrollPos = 0;
-window.addEventListener('scroll', function () {
-    if ((document.body.getBoundingClientRect()).top > scrollPos) {
-        console.log('up')
-        goOne(true)
-    }
-    else if ((document.body.getBoundingClientRect()).top < scrollPos) {
-        goOne(false)
-        console.log('down')
-    }
-    scrollPos = (document.body.getBoundingClientRect()).top;
-});
+        window.addEventListener('scroll', function() {
+            if ((document.body.getBoundingClientRect()).top > scrollPos) {
+                console.log('up')
+                goOne(true)
+            } else if ((document.body.getBoundingClientRect()).top < scrollPos) {
+                goOne(false)
+                console.log('down')
+            }
+            scrollPos = (document.body.getBoundingClientRect()).top;
+        });
 
 
-var elem = document.getElementById('left-airplane'),
-    top = parseInt(elem.style.marginTop, 10) || 0,
-    step = 1;
+        var elem = document.getElementById('left-airplane'),
+            top = parseInt(elem.style.marginTop, 10) || 0,
+            step = 1;
 
-function animate() {
-    if (top < 100) {
-        requestAnimationFrame(animate);
-        elem.style.marginTop = top + 'px';
-        top += step;
-    }
-}
-
-var elem2 = document.getElementById('right-airplane'),
-    top = parseInt(elem2.style.marginTop, 10) || 0,
-    step = 1;
-
-function animate2() {
-    if (top < 100) {
-        requestAnimationFrame(animate2);
-        elem2.style.marginTop = top + 'px';
-        top += step;
-    }
-}
-var countUp = 1
-var countDown = 1
-function goOne(up) {
-    var frag = document.getElementById('left-airplane')
-    var frag2 = document.getElementById('right-airplane')
-    if (up == true) {
-        if (countUp % 1 == 0) {
-            for (var i = 0; i != 5; i++) {
-                currentTop = parseInt(frag.style.marginTop) || 0;
-                newTop = parseInt(currentTop + 1);
-                frag.style.marginTop = newTop + "px";
-                frag2.style.marginTop = newTop + "px";
+        function animate() {
+            if (top < 100) {
+                requestAnimationFrame(animate);
+                elem.style.marginTop = top + 'px';
+                top += step;
             }
         }
-        countUp = countUp + 1;
-    }
-    else {
-        if (countDown % 1 == 0) {
-            for (var i = 0; i != 5; i++) {
-                currentTop = parseInt(frag.style.marginTop) || 0;
-                newTop = parseInt(currentTop - 1);
-                frag.style.marginTop = newTop + "px";
-                frag2.style.marginTop = newTop + "px";
+
+        var elem2 = document.getElementById('right-airplane'),
+            top = parseInt(elem2.style.marginTop, 10) || 0,
+            step = 1;
+
+        function animate2() {
+            if (top < 100) {
+                requestAnimationFrame(animate2);
+                elem2.style.marginTop = top + 'px';
+                top += step;
             }
         }
-        countDown = countDown + 1;
-    }
-}
+        var countUp = 1
+        var countDown = 1
+
+        function goOne(up) {
+            var frag = document.getElementById('left-airplane')
+            var frag2 = document.getElementById('right-airplane')
+            if (up == true) {
+                if (countUp % 1 == 0) {
+                    for (var i = 0; i != 5; i++) {
+                        currentTop = parseInt(frag.style.marginTop) || 0;
+                        newTop = parseInt(currentTop + 1);
+                        frag.style.marginTop = newTop + "px";
+                        frag2.style.marginTop = newTop + "px";
+                    }
+                }
+                countUp = countUp + 1;
+            } else {
+                if (countDown % 1 == 0) {
+                    for (var i = 0; i != 5; i++) {
+                        currentTop = parseInt(frag.style.marginTop) || 0;
+                        newTop = parseInt(currentTop - 1);
+                        frag.style.marginTop = newTop + "px";
+                        frag2.style.marginTop = newTop + "px";
+                    }
+                }
+                countDown = countDown + 1;
+            }
+        }
     </script>
 </body>
 

@@ -555,6 +555,10 @@
         padding-top: 110px;
         padding-bottom: 110px;
     }
+    
+    .judges-section-container {
+        width: 70%;
+    }
     /* slider page style */
     
     .slider-section {
@@ -564,13 +568,19 @@
     }
     
     .slider-section .slider-header {
-        margin-left: 180px;
+        /* margin-left: 180px; */
         margin-bottom: 40px;
+    }
+    
+    @media screen and (min-width: 900px) {
+        .slider-section .slider-section-container {
+            width: 70%;
+        }
     }
     
     @media screen and (max-width: 900px) {
         .slider-section .slider-header {
-            margin-left: 20px;
+            /* margin-left: 20px; */
             margin-bottom: 40px;
         }
     }
