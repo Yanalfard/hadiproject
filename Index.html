@@ -39,18 +39,17 @@
                     <li><button class="nav-button" data-toggle="modal" data-target="#myModal">Submit Your Game</button></li>
                 </ul>
             </div>
-            <!--header menu in mobile size-->
-            <div id="mySidenav" class="sidenav d-md-none">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#header-page">Home</a>
-                <a class="submit-game" data-toggle="modal" data-target="#myModal">Submit Your Game</a>
-                <a href="#">Storm Publishings</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Trademark Disclaimer</a>
-            </div>
-
         </nav>
+        <!--header menu in mobile size-->
+        <div id="mySidenav" class="sidenav d-md-none" style="z-index: 10000;">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#header-page">Home</a>
+            <a class="submit-game" data-toggle="modal" data-target="#myModal">Submit Your Game</a>
+            <a href="#">Storm Publishings</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Trademark Disclaimer</a>
+        </div>
         <img id="left-airplane" class="ml-3 absolute left-airplane" src="Img/left-airplane.svg">
         <div class="my-column my-center uk-align-center header-content ">
             <h1 class="my-center"> Storm The World (STW):</h1>
@@ -242,7 +241,7 @@
 
         </div>
         <div class="my-center col-md-5">
-            <p class="mt-5"  style="font-family: MontReg;">We will announce the winners in mid-October. More details about the Terms and Conditions can be found <a href="#" class="bold-link">here.</a></p>
+            <p class="mt-5" style="font-family: MontReg;">We will announce the winners in mid-October. More details about the Terms and Conditions can be found <a href="#" class="bold-link">here.</a></p>
         </div>
     </section>
     <!--end of Competition Journey section-->
@@ -611,7 +610,7 @@
     <!--end footer section-->
 
     <!-- The Modal (game submition form)-->
-    <div class="modal fade" id="myModal">
+    <div class="modal fade" id="myModal" style="z-index:1000000">
         <div class="modal-dialog modal-dialog-centered modal-lg ">
             <div class="modal-content ">
                 <div>
