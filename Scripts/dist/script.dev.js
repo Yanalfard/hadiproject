@@ -74,22 +74,22 @@ function openNav() {
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
-} // window.onscroll = function() { menuBackground() };
-// function menuBackground() {
-//     var marTop = document.getElementById("menu").style.marginTop;
-//     if (marTop < "10") {
-//         document.getElementById("menu").style.background = "transparent";
-//     }
-//     document.getElementById("menu").style.background = "white";
-//     document.getElementById("menu").style.opacity = "0.6";
-// }
+}
 
+function fadeIn(first, second) {
+  var one = document.getElementById(first);
+  one.classList.remove('fade-in');
+  one.classList.add('fade-out');
+  var two = document.getElementById(second);
+  two.classList.remove('fade-out');
+  two.classList.add('fade-in');
+}
 
-$(window).on("scroll", function () {
-  if ($(window).scrollTop() > 50) {
-    $("#menu").addClass("active-header");
-  } else {
-    //remove the background property so it comes transparent again (defined in your css)
-    $("#menu").removeClass("active-header");
-  }
-});
+function fadeOut(first, second) {
+  var one = document.getElementById(first);
+  one.classList.remove('fade-out');
+  one.classList.add('fade-in');
+  var two = document.getElementById(second);
+  two.classList.remove('fade-in');
+  two.classList.add('fade-out');
+}
