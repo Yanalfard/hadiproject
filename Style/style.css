@@ -874,8 +874,10 @@
     }
     
     .active-header {
-        background-color: #fff;
-        opacity: 0.6;
+        color: black;
+        font-weight: 800;
+        background: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(7px);
     }
     
     @media screen and (max-height: 450px) {
@@ -885,11 +887,6 @@
         .sidenav a {
             font-size: 18px;
         }
-    }
-    
-    .active-header {
-        background-color: #fff;
-        opacity: 0.6;
     }
     
     @media screen and (min-width: 1417px) and (max-width: 1610px) {
