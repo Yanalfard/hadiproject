@@ -88,3 +88,24 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
+
+// window.onscroll = function() { menuBackground() };
+
+// function menuBackground() {
+
+//     var marTop = document.getElementById("menu").style.marginTop;
+//     if (marTop < "10") {
+//         document.getElementById("menu").style.background = "transparent";
+//     }
+//     document.getElementById("menu").style.background = "white";
+//     document.getElementById("menu").style.opacity = "0.6";
+// }
+
+$(window).on("scroll", function() {
+    if ($(window).scrollTop() > 50) {
+        $("#menu").addClass("active-header");
+    } else {
+        //remove the background property so it comes transparent again (defined in your css)
+        $("#menu").removeClass("active-header");
+    }
+});
