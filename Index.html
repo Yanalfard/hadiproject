@@ -137,17 +137,17 @@
                             <div class="">
                                 <div id="content">
                                     <ul class="timeline">
-                                        <li class="event" step="step 1:">
+                                        <li class="event" step="Step 1:">
                                             <h3>Game Submission<br>(15 July - 15 Aug)</h3>
                                             <p style="font-family: MontReg !important">During this period, you’ll be able to submit your hyper-casual mobile game by clicking the “Submit your game” button and filling in the form. More details about the submission criteria can be found <a href="#"
                                                     class="bold-link">here</a>.</p>
                                         </li>
-                                        <li class="event" step="step 2:">
+                                        <li class="event" step="Step 2:">
                                             <h3>Shortlisting<br>(16 – 31 Aug)</h3>
                                             <p>In this round, the competition jury that comprises experts across areas such as game design, monetisation and user acquisition (UA) will select the Top 10 games based on the game’s originality, production quality
                                                 as well as market fit. We will announce the Top 10 winners on the <a href="#" class="bold-link"> STW Discord Channel </a> and <a href="#" class="bold-link">Facebook Event Page</a> on Tuesday, 31 August.</p>
                                         </li>
-                                        <li class="event" step="step 3:">
+                                        <li class="event" step="Step 3:">
                                             <h3>Final Round<br>(1 – 30 Sept)</h3>
                                             <p>The Top 10 games that progress to the semifinal round will be awarded cash prizes.<br><br> In the final round, the Top 10 will be working hand-in-hand with Storms’ UA experts to run UA testing. Depending on
                                                 the test results, they will have the opportunity to unlock the first/runner-up’s prizes.</p>
@@ -690,11 +690,9 @@
         var scrollPos = 0;
         window.addEventListener('scroll', function() {
             if ((document.body.getBoundingClientRect()).top > scrollPos) {
-                console.log('up')
                 goOne(true)
             } else if ((document.body.getBoundingClientRect()).top < scrollPos) {
                 goOne(false)
-                console.log('down')
             }
             scrollPos = (document.body.getBoundingClientRect()).top;
         });
