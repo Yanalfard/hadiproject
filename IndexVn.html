@@ -1,0 +1,768 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STW</title>
+    <link href="Style/bootstrap.min.css" rel="stylesheet" />
+    <link href="Style/bootstrap.css" rel="stylesheet" />
+    <link href="Style/style.css" rel="stylesheet" />
+
+
+    <script src="Scripts/jquery-3.6.0.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/script.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+<body>
+    <!--header section-->
+    <section id="header-page" class="header-page">
+        <nav id="menu" class="navbar navbar-expand-md navbar-light fixed-top">
+
+            <a href="#" class="navbar-brand ml-md-4">
+                <img src="img/logo.png">
+            </a>
+            <button type="button" class="navbar-toggler" onclick="openNav()">
+                <span class="navbar-toggler-icon font-weight-bold"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-benetwe">
+                <ul class="nav navbar-nav my-center">
+                    <li class="active mx-md-4"><a href="#header-page">Home</a></li>
+                    <li class="mx-md-4"><a href="#competition-journey">Competition Journey</a></li>
+                    <li class="mx-md-4"><a href="#judges-section">The Judges</a></li>
+                    <li class="mx-md-4"><a href="#faq-section">FAQ</a></li>
+                    <li class="mx-md-4"><a href="https://storms.com/publishing/">Storm Publishings</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right mr-md-4">
+                    <li><button class="nav-button" data-toggle="modal" data-target="#myModal">Submit Your Game</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--header menu in mobile size-->
+        <div id="mySidenav" class="sidenav d-md-none" style="z-index: 10000;">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#header-page">Home</a>
+            <a class="submit-game" data-toggle="modal" data-target="#myModal">Submit Your Game</a>
+            <a href="#">Storm Publishings</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Trademark Disclaimer</a>
+        </div>
+        <img id="left-airplane" class="ml-3 absolute left-airplane" src="img/left-airplane.svg">
+        <div class="my-column my-center uk-align-center header-content ">
+            <h1 class="my-center"> Storm The World (STW): <br> 2<sup>nd</sup> Edition</h1>
+            <img class="my-center header-timeline" src="img/timeline.svg">
+
+            <div class="row my-center col-lg-9 header-button mt-5">
+                <div class="col-lg-3 mt-5 mt-md-0 my-button-container my-center">
+                    <img class="bg-shadow" src="img/btn-bg.svg">
+                    <button data-toggle="modal" data-target="#myModal">Submit Your Game</button>
+
+                </div>
+                <div class="col-lg-3 mt-5 mt-md-0 my-button-container my-center">
+                    <img class="bg-shadow" src="img/btn-bg.svg">
+                    <button onclick="window.location.href='https://discord.com/invite/Fre8t7aE'">Join Discord
+                        Channel</button>
+                </div>
+                <div class="col-lg-3  mt-5 mt-md-0 my-button-container my-center">
+                    <img class="bg-shadow" src="img/btn-bg.svg">
+                    <button>Facebook Event Page</button>
+                </div>
+            </div>
+
+
+            <a class="chevron" href="#whatSTW"><img class="my-center" src="img/chevron-down.svg"></a>
+        </div>
+        <img id="right-airplane" class="mr-3 absolute right-airplane" src="img/right-airplane.svg">
+
+    </section>
+    <!--end header section-->
+    <!--what is STW section-->
+    <section id="whatSTW" class="whatSTW my-center">
+        <h1 class="text-left pb-2 d-none mobile-header">
+            What is <br> Storm The World?
+        </h1>
+        <div class="whatSTW-container my-center pt-2" dir="rtl">
+            <div class="img-container pt-md-4">
+                <img class="pt-md-3" src="img/What is Storm the World.svg" width="250">
+            </div>
+            <div class="content-container pt-5 pt-md-0">
+                <h1 class="text-left pb-3 desktop-header">
+                    What is <br> ?Storm The World
+                </h1>
+                <p class="text-left" style="font-family: MontReg;">Storm The World is a hyper-casual game competition
+                    that was first launched by Storms Publishing in January 2021<br><br>Its aim is to supercharge the
+                    growth of high-potential indie mobile game developers yet to be discovered by offering
+                    them the chance to win cash prizes and attractive publishing contracts
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--end what is STW section-->
+    <!--Why Should You Participate? section-->
+    <section class="why-participate">
+        <div class="why-participate-container my-center">
+            <h1 class="text-white text-left">
+                Why Should You <br> Participate?
+            </h1>
+            <div class="row mt-5">
+
+                <div class="col-sm-4 why-element">
+                    <img class="" src="img/Trophy.svg">
+                    <h4 class="mt-4 text-white">Attractive <br> Cash Prizes</h4>
+                </div>
+                <div class="col-sm-4 why-element">
+                    <img class="ml-4" src="img/Contract.svg">
+                    <h4 class="mt-4 pt-2 text-white">Exclusive <br> Publishing <br> Contracts</h4>
+                </div>
+                <div class="col-sm-4 why-element">
+                    <img class="gly-rotate-25" src="img/Megaphone.svg">
+                    <h4 class="mt-4 text-white pt-1">Brand <br> Exposure</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end Why Should You Participate section-->
+    <!--Competition Journey section-->
+    <section id="competition-journey" class="competition-journey my-center">
+        <div class="my-center">
+            <h1 class="text-left text-md-center ml-md-0 ml-3" style="font-family: MontBold;">
+                How Your <br> Competition Journey <br> Looks Like
+            </h1>
+            <!--in mobile size-->
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="">
+                            <div class="">
+                                <div id="content">
+                                    <ul class="timeline">
+                                        <li class="event" step="Step 1:">
+                                            <h3>Game Submission<br>(15 July - 15 Aug)</h3>
+                                            <p style="font-family: MontReg !important">During this period, you’ll be
+                                                able to submit your hyper-casual mobile game by clicking the “Submit
+                                                your game” button and filling in the form. More details about the
+                                                submission criteria can be found <a href="https://docs.google.com/document/d/1yX08Ou9O3GUCIXeqhqftbr6aFFitYYKNE60IZFO9TxE/edit" class="bold-link">here</a>.
+                                            </p>
+                                        </li>
+                                        <li class="event" step="Step 2:">
+                                            <h3>Shortlisting<br>(16 – 31 Aug)</h3>
+                                            <p>In this round, the competition jury that comprises experts across areas
+                                                such as game design, monetisation and user acquisition (UA) will select
+                                                the Top 10 games based on the game’s originality, production quality
+                                                as well as market fit. We will announce the Top 10 winners on the <a
+                                                    href="https://discord.com/invite/Fre8t7aE" class="bold-link"> STW Discord Channel </a> and <a href="#"
+                                                    class="bold-link">Facebook Event Page</a> on Tuesday, 31 August.</p>
+                                        </li>
+                                        <li class="event" step="Step 3:">
+                                            <h3>Final Round<br>(1 – 30 Sept)</h3>
+                                            <p>The Top 10 games that progress to the semifinal round will be awarded
+                                                cash prizes.<br><br> In the final round, the Top 10 will be working
+                                                hand-in-hand with Storms’ UA experts to run UA testing. Depending on
+                                                the test results, they will have the opportunity to unlock the
+                                                first/runner-up’s prizes.</p>
+                                        </li>
+                                        <li class="event">
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--in desktop size-->
+            <section class="timeline-section my-center mt-5 mb-3">
+                <div class="my-row">
+                    <div id="step1Dot" class="step-dot">
+                        <div id="step1InnerDot" class="step-innerdot my-center mt-1"></div>
+                    </div>
+                    <div class="my-column">
+                        <span id="step1Date" class="mb-2">15 July - 15 Aug</span>
+                        <div id="step1Line" class="step-line"></div>
+                        <img id="step1Chev" class="my-center mt-3" src="img/chevron-down.svg" width="20px">
+                    </div>
+                    <div id="step2Dot" class="step-dot">
+                        <div id="step2InnerDot" class="my-center mt-1 step-innerdot"></div>
+                    </div>
+                    <div class="my-column">
+                        <span id="step2Date" class="mb-2 step-date">16 – 31 Aug</span>
+                        <div id="step2Line" class="step-line"></div>
+                        <img id="step2Chev" class="my-center mt-3 d-none" src="img/chevron-down.svg" width="20px">
+                    </div>
+                    <div id="step3Dot" class="step-dot">
+                        <div id="step3InnerDot" class="my-center mt-1 step-innerdot"></div>
+                    </div>
+                    <div class="my-column">
+                        <span id="step3Date" class="mb-2 step-date">1 – 30 Sept</span>
+                        <div id="step3Line" class="step-line"></div>
+                        <img id="step3Chev" class="my-center mt-3 d-none" src="img/chevron-down.svg" width="20px">
+                    </div>
+                    <div id="step4Dot" class="step-dot">
+                        <div id="step4InnerDot" class="my-center mt-1 step-innerdot"></div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="steps-container my-center pb-2">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item" onclick="step1()">
+                        <a class="nav-link active" data-toggle="tab" href="#Game-Submission">Game Submission</a>
+                    </li>
+                    <li class="nav-item" onclick="step2()">
+                        <a class="nav-link" data-toggle="tab" href="#Shortlisting">Shortlisting</a>
+                    </li>
+                    <li class="nav-item" onclick="step3()">
+                        <a class="nav-link" data-toggle="tab" href="#Final-Round">Final Round</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div id="Game-Submission" class="container tab-pane active text-left pb-5"><br>
+                        <h3>Step 1:</h3>
+                        <p>During this period, you’ll be able to submit your hyper-casual mobile game by clicking the
+                            “Submit your game” button and filling in the form. More details about the submission
+                            criteria can be found <a href="https://docs.google.com/document/d/1yX08Ou9O3GUCIXeqhqftbr6aFFitYYKNE60IZFO9TxE/edit" class="bold-link">here</a>.</p>
+                    </div>
+                    <div id="Shortlisting" class="container tab-pane fade text-left pb-5"><br>
+                        <h3>Step 2:</h3>
+                        <p>In this round, the competition jury that comprises experts across areas such as game design,
+                            monetisation and user acquisition (UA) will select the Top 10 games based on the game’s
+                            originality, production quality as well as market
+                            fit. We will announce the Top 10 winners on the <a href="https://discord.com/invite/Fre8t7aE" class="bold-link"> STW Discord
+                                Channel </a> and <a href="#" class="bold-link">Facebook Event Page</a> on Tuesday, 31
+                            August.</p>
+                    </div>
+                    <div id="Final-Round" class="container tab-pane fade text-left pb-5"><br>
+                        <h3>Step 3:</h3>
+                        <p>The Top 10 games that progress to the semifinal round will be awarded cash prizes.<br><br> In
+                            the final round, the Top 10 will be working hand-in-hand with Storms’ UA experts to run UA
+                            testing. Depending on the test results, they
+                            will have the opportunity to unlock the first/runner-up’s prizes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 my-center col-md-9">
+            <div class="col-md-4 my-center">
+                <img class="" src="img/Trophy Bubble.svg">
+                <h4 class="mt-4"><u>First Prize</u><br>US$100K Cash Prize</h4>
+                <p class="mt-4" style="font-family: MontReg;">for the first game submission that gets published by
+                    Storms as part of the contest </p>
+            </div>
+            <div class="col-md-4 my-center">
+                <img class="" src="img/Heart Bubble.svg">
+                <h4 class="mt-4"><u>Runners-Up</u><br>US$50K Cash Prize</h4>
+                <p style="font-family: MontReg;">for all other game submissions that get published by Storms as part of
+                    the contest</p>
+            </div>
+
+        </div>
+        <div class="my-center col-md-5">
+            <p class="mt-5" style="font-family: MontReg;">We will announce the winners in mid-October. More details
+                about the Terms and Conditions can be found <a href="https://docs.google.com/document/d/1yX08Ou9O3GUCIXeqhqftbr6aFFitYYKNE60IZFO9TxE/edit" class="bold-link">here.</a></p>
+        </div>
+    </section>
+    <!--end of Competition Journey section-->
+    <!--The Judges section-->
+    <section id="judges-section" class="judges-section">
+        <div class="my-center">
+            <h1 class="text-md-center">
+                The Judges
+            </h1>
+            <div class="row mt-5 my-center judges-section-container">
+                <div class="col my-center">
+                    <img class="" src="img/pic1.png">
+                    <h4 class="mt-4 font-weight-bold"><u>Benjamin Pommeraud</u></h4>
+                    <p class="mt-4">Chief Growth Officer <br> Storms</p>
+                </div>
+                <div class="col my-center">
+                    <img class="" src="img/pic2.png">
+                    <h4 class="mt-4 font-weight-bold"><u>Shn Juay</u></h4>
+                    <p class="mt-4">VP, Product & Marketing <br> Storms</p>
+                </div>
+                <div class="col my-center">
+                    <img class="" src="img/pic3.png">
+                    <h4 class="mt-4 font-weight-bold"><u>Andrew Mo</u></h4>
+                    <p class="mt-4">Product Manager <br> Facebook Gaming</p>
+                </div>
+                <div class="col my-center">
+                    <img class="" src="img/pic4.png">
+                    <h4 class="mt-4 font-weight-bold"><u>Ender Özcan</u></h4>
+                    <p class="mt-4 pb-4"> Global VP Sales <br> Adjust</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end The Judges section-->
+    <!--Slider section-->
+    <section class="slider-section">
+        <!-- <div class="my-center" style="width: 70%;"> -->
+        <div class="slider-section-container my-center">
+            <h1 class="text-left slider-header">
+                Storm The World: <br>Inaugural Edition
+            </h1>
+            <img class="absolute left-wave" src="img/left-wave.svg">
+            <div class="my-center">
+                <div id="demo" class="carousel slide mt-5" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                        <li data-target="#demo" data-slide-to="3"></li>
+                        <li data-target="#demo" data-slide-to="4"></li>
+                    </ul>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="slider-img" src="img/SliderBG.png">
+                            <!-- front -->
+                            <div class="carousel-caption text-left  my-center slider-card" id="front1">
+                                <h4 class="">IGN Southeast Asia</h4>
+                                <p class="">PH-based Gaming Studio Kuyi Mobile Outshines 250 Competitors to Win
+                                    Publishing Deal</p>
+                                <div class="my-row slider-bottom">
+                                    <p style="font-size: 16px;" class="float-left bold-link"
+                                        onclick="window.location.href='https://sea.ign.com/sea-indie-games/171742/news/pinoy-game-studio-kuyi-mobile-outshines-250-competitors-to-win-publishing-deal'"><u>Read more</u></p>
+                                    <a href="#"><img class="absolute float-right mr-auto" src="img/next.svg"
+                                            width="20px" style="margin-top:1.5rem"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <img class="slider-img" src="img/SliderBG.png">
+                            <!-- front -->
+                            <div class="carousel-caption text-left  my-center" id="front2">
+                                <h4 class="">Digital News Asia</h4>
+                                <p class="">Storms announces Storm the World 2021 competition for indie mobile game
+                                    creators</p>
+                                <div class="my-row slider-bottom">
+                                    <p style="font-size: 16px;" class="float-left bold-link"
+                                        onclick="window.location.href='https://www.digitalnewsasia.com/digerati50/storms-announces-storm-world-2021-competition-indie-mobile-game-creators'"><u>Read more</u></p>
+                                    <a href="#"><img class="absolute float-right mr-auto" src="img/next.svg"
+                                            width="20px" style="margin-top:1.5rem"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <img class="slider-img" src="img/SliderBG.png">
+                            <!-- front -->
+                            <div class="carousel-caption text-left  my-center" id="front3">
+                                <h4 class="">AnimationXpress</h4>
+                                <p class="">Philippines-based Kuyi Mobile earned the winner title at Storm The World
+                                    competition</p>
+                                <div class="my-row slider-bottom">
+                                    <p style="font-size: 16px;" class="float-left bold-link"
+                                        onclick="window.location.href='https://www.animationxpress.com/games/philippines-based-kuyi-mobile-earned-the-winner-title-at-storm-the-world-competition/'"><u>Read more</u></p>
+                                    <a href="#"><img class="absolute float-right mr-auto " src="img/next.svg"
+                                            width="20px" style="margin-top:1.5rem"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <img class="slider-img" src="img/SliderBG.png">
+                            <!-- front -->
+                            <div class="carousel-caption text-left my-center" id="front4">
+                                <h4 class="">IGN Southeast Asia</h4>
+                                <p class="">Here’s Your Chance To Get Your Mobile Game Published And Win SGD$160,000</p>
+                                <div class="my-row slider-bottom">
+                                    <p style="font-size: 16px;" class="float-left bold-link"
+                                        onclick="window.location.href='https://sea.ign.com/sea-indie-games/167540/news/heres-your-chance-to-get-your-mobile-game-published-and-win-sgd160000'"><u>Read more</u></p>
+                                    <a href="#"><img class="absolute float-right mr-auto " src="img/next.svg"
+                                            width="20px" style="margin-top:1.5rem"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <img class="slider-img" src="img/SliderBG.png">
+                            <!-- front -->
+                            <div class="carousel-caption text-left my-center" id="front5">
+                                <h4 class="">EGG Network</h4>
+                                <p class="">Storm The World With Your Mobile Game and Win up to USD 120k!</p>
+                                <div class="my-row slider-bottom">
+                                    <p style="font-size: 16px;" class="float-left bold-link"
+                                        onclick="window.location.href='https://egg.network/storm-the-world-with-your-mobile-game-and-win-up-to-usd-120k/'"><u>Read more</u></p>
+                                    <a href="#"><img class="absolute float-right mr-auto " src="img/next.svg"
+                                            width="20px" style="margin-top:1.5rem"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <img class="gly-rotate-180" src="img/prev.svg">
+                    </a>
+                    <a class="carousel-control-next p-3" href="#demo" data-slide="next">
+                        <img class="p-3" src="img/next.svg">
+                    </a>
+
+                </div>
+            </div>
+
+
+        </div> <img class="right-wave float-right " src="img/right-wave.svg">
+
+        <div class="row my-center col-md-9 numbers">
+            <div class="col-md-4 my-center">
+                <h1 class="mt-4">250</h1>
+                <label class="font-weight-bold">submissions</label>
+            </div>
+            <div class="col-md-4 my-center">
+                <h1 class="mt-4">17</h1>
+                <label class="font-weight-bold">Countries</label>
+            </div>
+            <div class="col-md-4 my-center">
+                <h1 class="mt-4">1</h1>
+                <label class="font-weight-bold">Winner</label>
+            </div>
+
+            <!-- </div> -->
+        </div>
+    </section>
+    <!--end Slider section-->
+    <!--next winner section-->
+    <section class="next-winner-section my-center col-md-9">
+        <h1 class="text-md-center">
+            Are you ready to be the next winner?
+        </h1>
+        <img class="mt-5" src="img/Trophy Eye.svg">
+        <div class="row my-center col-lg-9 numbers mt-5">
+            <div class="col-lg-4 my-center mt-5 mt-md-0 my-button-container">
+                <img class="bg-shadow" src="img/btn-bg.svg">
+                <div class="my-btn">
+                <a href="#header-page">Join the contest</a>
+            </div>
+                <!-- <button onclick="window.location.href='#header-page'">Join the contest</button> -->
+
+            </div>
+            <div class="col-lg-4 my-center mt-5 mt-md-0 my-button-container">
+                <img class="bg-shadow" src="img/btn-bg.svg">
+                <div class="my-btn">
+                    <a href="#">Watch Storms webinar</a>
+                <!-- <button>Watch Storms webinar</button> -->
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- end next winner section-->
+    <!--Faq section-->
+    <section id="faq-section" class="faq-section">
+        <div class="faq-section-container col-md-9 col-11 my-center">
+            <h1 class="text-left">
+                FAQ
+            </h1>
+            <!--Accordion wrapper-->
+            <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+
+                <!-- Accordion card -->
+                <div class="card">
+                    <!-- Card header -->
+                    <div class="card-header" role="tab" id="headingOne1">
+                        <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
+                            aria-controls="collapseOne1">
+                            <h5 class="mb-0">
+                                <span> 1. Can I still participate if my game has already been published?</span> <img
+                                    src="img/chevron-down.svg"></i>
+                            </h5>
+                        </a>
+                    </div>
+
+                    <!-- Card body -->
+                    <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+                        data-parent="#accordionEx">
+                        <div class="card-body text-left">
+                            Yes, you can - as long as your games have not been tested with Storms before.
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Accordion card -->
+
+                <!-- Accordion card -->
+                <div class="card">
+
+                    <!-- Card header -->
+                    <div class="card-header" role="tab" id="headingTwo2">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
+                            aria-expanded="false" aria-controls="collapseTwo2">
+                            <h5 class="mb-0">
+                                <span> 2. What kinds of games qualify?</span> <img src="img/chevron-down.svg"></i>
+                            </h5>
+                        </a>
+                    </div>
+
+                    <!-- Card body -->
+                    <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
+                        data-parent="#accordionEx">
+                        <div class="card-body">
+                            We are open to accepting both hyper and hybrid-casual mobile game submissions that meet these criteria:
+                            <ul>
+                                <li>Be available on either the Google Play Store and/or the Apple App Store</li>
+                                <li>A playable demo — an APK or TestFlight with at least a minimum of 7-10 mins gameplay</li>
+                                <li>Have gone through cost per installation tests and integration with an analytics tool such as Firebase (Preferred not mandatory)	Chúng tôi chấp nhận các tựa game di động hyper-casual và hybrid-casual đáp ứng các tiêu chí sau:</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Accordion card -->
+
+                <!-- Accordion card -->
+                <div class="card">
+
+                    <!-- Card header -->
+                    <div class="card-header" role="tab" id="headingThree3">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
+                            aria-expanded="false" aria-controls="collapseThree3">
+                            <h5 class="mb-0">
+                                <span> 3. I am not able to provide the retention results. Can I still submit my
+                                    game?</span> <img src="img/chevron-down.svg"></i>
+                            </h5>
+                        </a>
+                    </div>
+
+                    <!-- Card body -->
+                    <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
+                        data-parent="#accordionEx">
+                        <div class="card-body">
+                            You can submit your games. However, kindly note that game retention is one of the criteria that we’ll be using to assess the submissions during the elimination round.
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Accordion card -->
+
+                <!-- Accordion card -->
+                <div class="card">
+
+                    <!-- Card header -->
+                    <div class="card-header" role="tab" id="headingFour4">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseFour4"
+                            aria-expanded="false" aria-controls="collapseFour4">
+                            <h5 class="mb-0">
+                                <span>4. Can I submit more than one game?</span> <img src="img/chevron-down.svg"></i>
+                            </h5>
+                        </a>
+                    </div>
+
+                    <!-- Card body -->
+                    <div id="collapseFour4" class="collapse" role="tabpanel" aria-labelledby="headingFour4"
+                        data-parent="#accordionEx">
+                        <div class="card-body">
+                            Yes, of course. Please feel free to submit an unlimited number of games as you can as long as they meet the game submission criteria 
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Accordion card -->
+                <!-- Accordion card -->
+                <div class="card">
+
+                    <!-- Card header -->
+                    <div class="card-header" role="tab" id="headingFive5">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseFive5"
+                            aria-expanded="false" aria-controls="collapseFive5">
+                            <h5 class="mb-0">
+                                <span> 5. Is there any requirement for developing technology?</span> <img
+                                    src="img/chevron-down.svg"></i>
+                            </h5>
+                        </a>
+                    </div>
+
+                    <!-- Card body -->
+                    <div id="collapseFive5" class="collapse" role="tabpanel" aria-labelledby="headingFive5"
+                        data-parent="#accordionEx">
+                        <div class="card-body">
+                            We don’t have any specific requirements for the developing technology. However, please ensure that your games are compliant with the licensing and IP rights that exist in the industry.
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Accordion card -->
+            </div>
+            <!-- Accordion wrapper -->
+        </div>
+    </section>
+    <!--contact section-->
+    <section class="contact-section">
+        <div class=" row contact-section-container col-md-9 col-11 my-center">
+            <div class="float-left col-md-6">
+                <h1 class="text-left">
+                    Can’t find what you’re looking for?
+                </h1>
+                <p class="text-left mt-3 ">
+                    Contact “Storm The World: 2nd Edition” organising team at <a href="mailto:help@storms.com"
+                        class="bold-link">help@storms.com</a> or visit <a href="https://storms.com/publishing/" class="bold-link">our website</a>
+                </p>
+            </div>
+            <div class="col-md-4 ml-auto">
+                <h1 class="text-left">
+                    Stay Updated
+                </h1>
+                <div class="row mt-5">
+                    <a href="#"><img class="mr-3  pl-1 ml-1" src="img/LinkedIn.svg"></a>
+                    <a href="#"> <img class="" src="img/IG.svg"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end contact section-->
+    <!--footer section-->
+    <footer class="d-none d-md-block">
+        <div class="footer-section col-lg-10 my-center">
+            <div class="row col-md-12">
+                <span class="mr-auto col-md-6 text-left">© 2021 Digital Games International Pte. Ltd.</span>
+                <a href="https://storms.com/privacy/" class=" text-left mr-1 mr-lg-4 ">Privacy Policy</a>
+                <a href="https://storms.com/terms/" class=" text-left  mr-1 mr-lg-4">Terms of Service</a>
+                <a href="https://storms.com/trademark-disclaimer/" class=" text-left">Trademark Disclaimer</a>
+            </div>
+        </div>
+    </footer>
+    <!--end footer section-->
+
+    <!-- The Modal (game submition form)-->
+    <div class="modal fade" id="myModal" style="z-index:1000000;">
+        <div class="modal-dialog modal-dialog-centered modal-lg ">
+            <div class="modal-content pb-3">
+                <div>
+                    <button type="button" class="close float-right pt-3 pr-3" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <script type="text/javascript" src="https://form.jotform.com/jsform/211858952938472">
+                </script>
+                <!-- <div class="modal-body pl-5 ">
+                    <form>
+                        <div class="form-row ">
+                            <div class="form-group col-md-5 ">
+                                <label for="fullName">Full Name*</label>
+                                <br>
+                                <input type="text" class="" id="fullName" placeholder=" ">
+                            </div>
+                            <div class="form-group col-md-5 ">
+                                <label for="Email">Email*</label>
+                                <br>
+                                <input type="email" class=" " id="Email" placeholder=" ">
+                            </div>
+                        </div>
+                        <div class="form-row ">
+                            <div class="form-group col-md-5 ">
+                                <label for="discordID ">Discord ID*</label>
+                                <br>
+                                <input type="text" class=" " id="discordID" placeholder=" ">
+                            </div>
+                            <div class="form-group col-md-5 ">
+                                <label for="country">Country*</label>
+                                <br>
+                                <select id="Country" class=" ">
+                  <option selected></option>
+                  <option>...</option>
+                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-5">
+                                <label for="mobile ">Mobile*</label>
+                                <br>
+                                <input type="tel" class=" " id="mobile" placeholder=" ">
+                            </div>
+                            <div class="form-group col-md-5 ">
+                                <label for="gameLink ">Your Game Link*</label>
+                                <br>
+                                <input type="url" class=" " id="gameLink" placeholder=" ">
+                            </div>
+                        </div>
+                        <div class="form-row ">
+                            <div class="form-group col-md-5">
+                                <label for="retentionResults">Retention Results*</label>
+                                <br>
+                                <input type="text" class=" " id="retentionResults" placeholder=" ">
+                            </div>
+                            <div class="form-group col-md-5 ">
+                                <label for="cpi">CPI</label>
+                                <br>
+                                <input type="text " class=" " id="cpi" placeholder=" ">
+                            </div>
+                        </div>
+                        <p class="text-small ">By submitting you acknowledge that the information you submit will be used according to Storms Privacy Policy and Terms & Conditions.</p>
+                        <button type="submit " class="btn float-right " data-dismiss="modal">submit</button>
+                    </form>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- end The Modal (game submition form)-->
+    <script>
+        var scrollPos = 0;
+        window.addEventListener('scroll', function () {
+            if ((document.body.getBoundingClientRect()).top > scrollPos) {
+                goOne(true)
+            } else if ((document.body.getBoundingClientRect()).top < scrollPos) {
+                goOne(false)
+            }
+            scrollPos = (document.body.getBoundingClientRect()).top;
+        });
+
+
+        var elem = document.getElementById('left-airplane'),
+            top = parseInt(elem.style.marginTop, 10) || 0,
+            step = 1;
+
+        function animate() {
+            if (top < 100) {
+                requestAnimationFrame(animate);
+                elem.style.marginTop = top + 'px';
+                top += step;
+            }
+        }
+
+        var elem2 = document.getElementById('right-airplane'),
+            top = parseInt(elem2.style.marginTop, 10) || 0,
+            step = 1;
+
+        function animate2() {
+            if (top < 100) {
+                requestAnimationFrame(animate2);
+                elem2.style.marginTop = top + 'px';
+                top += step;
+            }
+        }
+        var countUp = 1
+        var countDown = 1
+
+        function goOne(up) {
+            var frag = document.getElementById('left-airplane')
+            var frag2 = document.getElementById('right-airplane')
+            if (up == true) {
+                if (countUp % 1 == 0) {
+                    for (var i = 0; i != 5; i++) {
+                        currentTop = parseInt(frag.style.marginTop) || 0;
+                        newTop = parseInt(currentTop + 1);
+                        frag.style.marginTop = newTop + "px";
+                        frag2.style.marginTop = newTop + "px";
+                    }
+                }
+                countUp = countUp + 1;
+            } else {
+                if (countDown % 1 == 0) {
+                    for (var i = 0; i != 5; i++) {
+                        currentTop = parseInt(frag.style.marginTop) || 0;
+                        newTop = parseInt(currentTop - 1);
+                        frag.style.marginTop = newTop + "px";
+                        frag2.style.marginTop = newTop + "px";
+                    }
+                }
+                countDown = countDown + 1;
+            }
+        }
+    </script>
+</body>
+
+</html>
