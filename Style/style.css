@@ -744,20 +744,23 @@
     .next-winner-section button {
         background: #FF895B;
     }
+    
     .next-winner-section .my-btn {
         background: #FF895B;
     }
+    
     .next-winner-section .my-btn a {
         color: black;
     }
-    .next-winner-section button:hover , .next-winner-section .my-btn:hover {
+    
+    .next-winner-section button:hover,
+    .next-winner-section .my-btn:hover {
         background: white;
-        
     }
+    
     .next-winner-section .my-btn a:hover {
         text-decoration: none;
     }
-
     
     .my-button-container {
         width: 230px;
@@ -771,27 +774,25 @@
         z-index: -1;
     }
     
-    .my-button-container button , .my-button-container .my-btn{
+    .my-button-container button,
+    .my-button-container .my-btn {
         width: 221px;
         border: 2px solid black;
         border-radius: 50px;
         padding: 5px 0;
         font-weight: 600;
         font-size: 1rem;
-        
     }
-   
-
     
     .my-button-container button:focus {
         outline: none;
         text-decoration: none !important;
     }
-
-    .next-winner-section button , .next-winner-section .my-btn  {
+    
+    .next-winner-section button,
+    .next-winner-section .my-btn {
         width: 234px !important;
     }
-    
     /* FAQ section style */
     
     .faq-section {
@@ -979,4 +980,10 @@
         visibility: visible;
         opacity: 1;
         transition: opacity 0.5s linear;
+    }
+    
+    .vl {
+        border-left: 2px solid #4e4e4e;
+        height: 100%;
+        /* width: 2px; */
     }
