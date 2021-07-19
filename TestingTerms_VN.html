@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STW</title>
+    <link href="Style/bootstrap.min.css" rel="stylesheet" />
+    <link href="Style/bootstrap.css" rel="stylesheet" />
+    <link href="Style/style.css" rel="stylesheet" />
+
+
+    <script src="Scripts/jquery-3.6.0.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/script.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+    <section id="header-page" class="header-page">
+        <nav id="menu" class="navbar navbar-expand-md navbar-light fixed-top">
+
+            <a href="#" class="navbar-brand ml-md-4">
+                <img src="img/logo.png">
+            </a>
+            <button type="button" class="navbar-toggler" onclick="openNav()">
+                <span class="navbar-toggler-icon font-weight-bold"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-benetwe">
+                <ul class="nav navbar-nav my-center">
+                    <li class="active mx-md-4"><a href="#header-page">Trang chủ</a></li>
+                    <li class="mx-md-4"><a href="#competition-journey">Hành Trình Dự Thi</a></li>
+                    <li class="mx-md-4"><a href="#judges-section">Ban Giám Khảo</a></li>
+                    <li class="mx-md-4"><a href="#faq-section">Câu hỏi thường gặp</a></li>
+                    <li class="mx-md-4"><a href="https://storms.com/publishing/">Storms Publishing</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right mr-md-4">
+                    <li><button class="nav-button" data-toggle="modal" data-target="#myModal">Gửi Game Của Bạn</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--header menu in mobile size-->
+        <div id="mySidenav" class="sidenav d-md-none" style="z-index: 10000;">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#header-page">Trang chủ</a>
+            <a class="submit-game" data-toggle="modal" data-target="#myModal">Submit Your Game</a>
+            <a href="#">Storms Publishing</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Trademark Disclaimer</a>
+        </div>
+    </section>
+
+
+
+        <!--contact section-->
+        <section class="contact-section">
+            <div class=" row contact-section-container col-md-9 col-11 my-center">
+                <div class="float-left col-md-6">
+                    <h1 class="text-left">
+                        Không thấy những gì bạn đang tìm kiếm?
+                    </h1>
+                    <p class="text-left mt-3 ">
+                        Liên hệ với ban tổ chức “Storm The World: Mùa Thứ Hai” theo địa chỉ <a href="mailto:help@storms.com" class="bold-link">help@storms.com</a> hoặc truy cập <a href="https://storms.com/publishing/" class="bold-link">trang web của chúng tôi.</a>
+                    </p>
+                </div>
+                <div class="col-md-4 ml-auto">
+                    <h1 class="text-left">
+                        Luôn Cập Nhật
+                    </h1>
+                    <div class="row mt-5">
+                        <a href="https://www.linkedin.com/company/storms"><img class="mr-3  pl-1 ml-1" src="img/LinkedIn.svg"></a>
+                        <a href="https://www.instagram.com/stormsglobal/"> <img class="" src="img/IG.svg"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end contact section-->
+        <!--footer section-->
+        <footer class="d-none d-md-block">
+            <div class="footer-section col-lg-10 my-center">
+                <div class="row col-md-12">
+                    <span class="mr-auto col-md-6 text-left">© 2021 Digital Games International Pte. Ltd.</span>
+                    <a href="https://storms.com/privacy/" class=" text-left mr-1 mr-lg-4 ">Chính sách bảo mật</a>
+                    <a href="https://storms.com/terms/" class=" text-left  mr-1 mr-lg-4">Điều khoản dịch vụ</a>
+                    <a href="https://storms.com/trademark-disclaimer/" class=" text-left">Tuyên bố từ chối trách nhiệm về nhãn hiệu</a>
+                </div>
+            </div>
+        </footer>
+        <!--end footer section-->
+</body>
+</html>

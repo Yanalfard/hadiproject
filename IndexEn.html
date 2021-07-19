@@ -71,7 +71,7 @@
                 </div>
                 <div class="col-lg-3  mt-5 mt-md-0 my-button-container my-center">
                     <img class="bg-shadow" src="img/btn-bg.svg">
-                    <button>Facebook Event Page</button>
+                    <button onclick="window.location.href='https://www.facebook.com/events/2198934414287416'">Facebook Event Page</button>
                 </div>
             </div>
 
@@ -149,7 +149,7 @@
                                         <li class="event" step="Step 2:">
                                             <h3>Shortlisting<br>(16 – 31 Aug)</h3>
                                             <p>In this round, the competition jury that comprises experts across areas such as game design, monetisation and user acquisition (UA) will select the Top 10 games based on the game’s originality, production quality
-                                                as well as market fit. We will announce the Top 10 winners on the <a href="https://discord.com/invite/Fre8t7aE" class="bold-link"> STW Discord Channel </a> and <a href="#" class="bold-link">Facebook Event Page</a>                                                on Tuesday, 31 August.</p>
+                                                as well as market fit. We will announce the Top 10 winners on the <a href="https://discord.com/invite/Fre8t7aE" class="bold-link"> STW Discord Channel </a> and <a href="https://www.facebook.com/events/2198934414287416" class="bold-link">Facebook Event Page</a>                                                on Tuesday, 31 August.</p>
                                         </li>
                                         <li class="event" step="Step 3:">
                                             <h3>Final Round<br>(1 – 30 Sept)</h3>
@@ -224,7 +224,7 @@
                         <h3>Step 2:</h3>
                         <p>In this round, the competition jury that comprises experts across areas such as game design, monetisation and user acquisition (UA) will select the Top 10 games based on the game’s originality, production quality as well as market
                             fit. We will announce the Top 10 winners on the <a href="https://discord.com/invite/Fre8t7aE" class="bold-link"> STW Discord
-                                Channel </a> and <a href="#" class="bold-link">Facebook Event Page</a> on Tuesday, 31 August.
+                                Channel </a> and <a href="https://www.facebook.com/events/2198934414287416" class="bold-link">Facebook Event Page</a> on Tuesday, 31 August.
                         </p>
                     </div>
                     <div id="Final-Round" class="container tab-pane fade text-left pb-5"><br>
@@ -473,9 +473,7 @@
                             <ul>
                                 <li>Be available on either the Google Play Store and/or the Apple App Store</li>
                                 <li>A playable demo — an APK or TestFlight with at least a minimum of 7-10 mins gameplay</li>
-                                <li>Have gone through cost per installation tests and integration with an analytics tool such as Firebase (Preferred not mandatory) Chúng tôi chấp nhận các tựa game di động hyper-casual và hybrid-casual đáp ứng các tiêu chí
-                                    sau:
-                                </li>
+                                <li>Have gone through cost per installation tests and integration with an analytics tool such as Firebase (Preferred not mandatory)</li>
                             </ul>
                         </div>
                     </div>
@@ -659,70 +657,6 @@
         </div>
     </div>
     <!-- end The Modal (game submition form)-->
-    <script>
-        var scrollPos = 0;
-        window.addEventListener('scroll', function() {
-            if ((document.body.getBoundingClientRect()).top > scrollPos) {
-                goOne(true)
-            } else if ((document.body.getBoundingClientRect()).top < scrollPos) {
-                goOne(false)
-            }
-            scrollPos = (document.body.getBoundingClientRect()).top;
-        });
-
-
-        var elem = document.getElementById('left-airplane'),
-            top = parseInt(elem.style.marginTop, 10) || 0,
-            step = 1;
-
-        function animate() {
-            if (top < 100) {
-                requestAnimationFrame(animate);
-                elem.style.marginTop = top + 'px';
-                top += step;
-            }
-        }
-
-        var elem2 = document.getElementById('right-airplane'),
-            top = parseInt(elem2.style.marginTop, 10) || 0,
-            step = 1;
-
-        function animate2() {
-            if (top < 100) {
-                requestAnimationFrame(animate2);
-                elem2.style.marginTop = top + 'px';
-                top += step;
-            }
-        }
-        var countUp = 1
-        var countDown = 1
-
-        function goOne(up) {
-            var frag = document.getElementById('left-airplane')
-            var frag2 = document.getElementById('right-airplane')
-            if (up == true) {
-                if (countUp % 1 == 0) {
-                    for (var i = 0; i != 5; i++) {
-                        currentTop = parseInt(frag.style.marginTop) || 0;
-                        newTop = parseInt(currentTop + 1);
-                        frag.style.marginTop = newTop + "px";
-                        frag2.style.marginTop = newTop + "px";
-                    }
-                }
-                countUp = countUp + 1;
-            } else {
-                if (countDown % 1 == 0) {
-                    for (var i = 0; i != 5; i++) {
-                        currentTop = parseInt(frag.style.marginTop) || 0;
-                        newTop = parseInt(currentTop - 1);
-                        frag.style.marginTop = newTop + "px";
-                        frag2.style.marginTop = newTop + "px";
-                    }
-                }
-                countDown = countDown + 1;
-            }
-        }
-    </script>
 </body>
 
 </html>
