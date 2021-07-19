@@ -987,3 +987,19 @@
         height: 100%;
         /* width: 2px; */
     }
+    
+    .terms-section .terms-container {
+        margin-top: 160px;
+    }
+    
+    .terms-section .terms-container p {
+        text-align: justify;
+        text-justify: inter-word;
+        margin: auto;
+        font-family: MontReg;
+        color: black;
+    }
+    
+    .terms-section .terms-container p ul {
+        font-family: MontReg !important;
+    }
